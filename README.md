@@ -3,7 +3,7 @@
 This is a simple Task Manager web application developed as part of a Software Developer internship assessment.  
 The application allows users to register, log in, and manage their tasks with full CRUD functionality.
 
----
+-----
 
 ## 🚀 Features
 
@@ -14,7 +14,7 @@ The application allows users to register, log in, and manage their tasks with fu
 - MySQL database integration
 - Clean and simple UI
 
----
+-----
 
 ## 🛠️ Tech Stack
 
@@ -23,7 +23,16 @@ The application allows users to register, log in, and manage their tasks with fu
 - Database: MySQL
 - Version Control: Git & GitHub
 
----
+-----
+
+## 🛠️ Technologies & Libraries Used
+
+- **Flask** – Python web framework for backend development
+- **Flask-MySQLdb** – MySQL database integration with Flask
+- **MySQLdb (mysqlclient)** – MySQL database adapter for Python
+- **Werkzeug** – WSGI utility library (used internally by Flask)
+
+-----
 
 ## ⚙️ Setup Steps
 
@@ -53,7 +62,8 @@ Follow the steps below to run the project locally:
 
 8. Open the browser and visit:
     for example: http://127.0.0.1:5000
-    
+
+-----
 
 ## 🧠 Brief Explanation of the Approach
 
@@ -64,6 +74,7 @@ CRUD operations are handled through Flask routes and SQL queries.
 The frontend uses HTML templates and CSS for a clean and user-friendly interface.  
 Git and GitHub were used for version control with multiple logical commits representing different development stages.
 
+-----
 
 ## ✅ Test Cases to Verify Code and UI
 
@@ -82,7 +93,7 @@ Git and GitHub were used for version control with multiple logical commits repre
 - Access dashboard without login → Redirects to login page
 - Logout → Session cleared and redirected to login page
 
-
+-----
 
 ## 📂 Project Structure
 
