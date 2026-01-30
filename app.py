@@ -12,7 +12,7 @@ app.config.from_pyfile('config.py')
 mysql = MySQL(app)
 
 # ===============================
-# Home Route
+# Home Route or User login route
 # ===============================
 
 @app.route('/')
