@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h2>Welcome {{ session.username }}</h2>
+
+    <form method="post" action="/add_task">
+        <input name="title" placeholder="Task title" required>
+        <textarea name="description" placeholder="Task description"></textarea>
+        <button type="submit">Add Task</button>
+    </form>
+
+    <ul class="task-list">
+        {% for task in tasks %}
+        <li>
+            <strong>{{ task.title }}</strong><br>
+            {{ task.description }}
+
+            <div class="task-actions">
+                <a href="/edit_task/{{ task.id }}">Edit</a>
+                <a href="/delete_task/{{ task.id }}">Delete</a>
+            </div>
+        </li>
+        {% else %}
+        <li>No tasks found</li>
+        {% endfor %}
+    </ul>
+
+    <div class="logout">
+        <a href="/logout">Logout</a>
+    </div>
+</div>
+
+</body>
+</html>
