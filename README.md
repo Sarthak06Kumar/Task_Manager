@@ -110,22 +110,27 @@ Git and GitHub were used for version control with multiple logical commits repre
 
 ## 📂 Project Structure
 
-task_manager_flask/
+Task_Manager/
 │
 ├── app.py
 ├── config.py
 ├── requirements.txt
-│
-├── static/
-│ └── css/
-│ └── style.css
+├── README.md
 │
 ├── templates/
-│ ├── login.html
-│ ├── register.html
-│ ├── dashboard.html
-│ ├── edit_task.html
+│   ├── login.html
+│   ├── register.html
+│   ├── dashboard.html
+│   └── edit_task.html
 │
-└── README.md
+├── static/
+│   └── css/
+│       └── style.css
+│
+└── assets/
+    └── screenshots/
+        ├── login_page.png
+        ├── dashboard.png
+        └── edit_task.png
 
 
