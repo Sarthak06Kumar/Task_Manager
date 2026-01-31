@@ -16,6 +16,19 @@ The application allows users to register, log in, and manage their tasks with fu
 
 -----
 
+## 📸 Application Screenshots
+
+### 🔐 Login Page
+![Login Page](assets/screenshots/login_page.png)
+
+### 📋 Dashboard
+![Dashboard](assets/screenshots/dashboard.png)
+
+### ✏️ Edit Task Page
+![Edit Task Page](assets/screenshots/edit_task.png)
+
+---
+
 ## 🛠️ Tech Stack
 
 - Backend: Flask (Python)
