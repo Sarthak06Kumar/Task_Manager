@@ -2,24 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Edit Task</title>
-
-    <!-- CSS -->
+    <title>Edit Task | Task Manager</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
 
-<div class="container">
+<div class="auth-container">
     <h2>Edit Task</h2>
 
-    <form method="post">
-        <input name="title" value="{{ task.title }}" required>
+    <form method="post" class="auth-form">
+        <input type="text" name="title" value="{{ task.title }}" required>
         <textarea name="description">{{ task.description }}</textarea>
+
         <button type="submit">Update Task</button>
     </form>
 
-    <p style="text-align:center;">
-        <a href="/dashboard">Back to Dashboard</a>
+    <p class="switch-link">
+        <a href="/dashboard">← Back to Dashboard</a>
     </p>
 </div>
 
